@@ -58,10 +58,16 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold text-slate-800 hover:text-blue-600 transition-colors duration-200">
+        <div>
+          <Link
+            to="/"
+            className="flex items-center gap-2 text-2xl font-bold text-slate-800 hover:text-blue-600 transition-colors duration-200"
+          >
             <Code2 className="w-6 h-6 text-blue-600" />
+            Aldrin
           </Link>
-
+        </div>
+            
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
