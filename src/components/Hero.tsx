@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChevronDown, Download, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -35,12 +36,8 @@ const Hero = () => {
               <Mail size={20} />
               Get In Touch
             </button>
-            <a 
-              href="/projects"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 hover:scale-105"
-            >
-              View Projects
-            </a>
+               <Link to= "/projects" className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 hover:scale-105">
+                View All Projects </Link>
           </div>
 
           <button 

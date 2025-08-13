@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Code2 } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
@@ -8,7 +8,6 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
@@ -60,7 +59,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="text-2xl font-bold text-slate-800 hover:text-blue-600 transition-colors duration-200">
-            Aldrin Argoncillo
+            <Code2 className="w-6 h-6 text-blue-600" />
           </Link>
 
           {/* Desktop Navigation */}
