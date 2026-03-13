@@ -7,20 +7,22 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
 
-  const navItems = [
+  const isProjectsPage = location.pathname !== '/' && location.pathname !== '';
+  const homeNavItems = [
     { id: 'about', label: 'About' },
     { id: 'education', label: 'Education' },
     { id: 'experience', label: 'Experience' },
     { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' },
   ];
+  const navItems = isProjectsPage ? [] : homeNavItems;
 
   useEffect(() => {
     // Only run scroll detection on home page
     if (location.pathname !== '/') return;
     
     const handleScroll = () => {
-      const sections = navItems.map(item => document.getElementById(item.id));
+      const sections = homeNavItems.map(item => document.getElementById(item.id));
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -70,6 +72,14 @@ const Header = () => {
             
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
+            {isProjectsPage && (
+              <Link
+                to="/"
+                className="text-sm font-medium transition-colors duration-200 hover:text-blue-600 text-gray-600"
+              >
+                Home
+              </Link>
+            )}
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -82,9 +92,9 @@ const Header = () => {
               </button>
             ))}
             <Link
-              to="/projects"
+              to="/Projects"
               className={`text-sm font-medium transition-colors duration-200 hover:text-blue-600 ${
-                location.pathname === '/projects' ? 'text-blue-600' : 'text-gray-600'
+                location.pathname.toLowerCase().includes('project') ? 'text-blue-600' : 'text-gray-600'
               }`}
             >
               Projects
@@ -103,6 +113,15 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4">
+            {isProjectsPage && (
+              <Link
+                to="/"
+                onClick={() => setIsMenuOpen(false)}
+                className="block w-full text-left py-2 text-sm font-medium transition-colors duration-200 hover:text-blue-600 text-gray-600"
+              >
+                Home
+              </Link>
+            )}
             {navItems.map((item) => (
               <button
                 key={item.id}
@@ -115,10 +134,10 @@ const Header = () => {
               </button>
             ))}
             <Link
-              to="/projects"
+              to="/Projects"
               onClick={() => setIsMenuOpen(false)}
               className={`block w-full text-left py-2 text-sm font-medium transition-colors duration-200 hover:text-blue-600 ${
-                location.pathname === '/projects' ? 'text-blue-600' : 'text-gray-600'
+                location.pathname.toLowerCase().includes('project') ? 'text-blue-600' : 'text-gray-600'
               }`}
             >
               Projects

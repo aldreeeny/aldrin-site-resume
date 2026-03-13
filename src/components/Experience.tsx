@@ -47,6 +47,29 @@ const Experience = () => {
         "Utilized project management tools (e.g., Asana, Trello, ClickUp) to track progress, assign tasks, and ensure smooth workflow across teams.",
         "Led regular status meetings, created documentation, and maintained transparency with all project stakeholders to support project success.",
       ]
+    },
+    {
+      title: "AI AUTOMATIONS SPECIALIST",
+      company: "Freelance Work",
+      location: "Remote",
+      period: "SEPT 2024 - DEC 2025 (4 Months)",
+      description: [
+        "End-to-End Automation: Designed, deployed, and maintained scalable workflow automations to eliminate manual tasks and optimize client operations.",
+        "System Integration: Integrated CRMs (like GoHighLevel), ERPs, and databases via custom API connectors and scripts to resolve data bottlenecks.",
+        "AI & Content Pipelines: Built AI-driven pipelines and autonomous content engines for image generation, text summarization, and process automation.",
+        "Infrastructure Management: Administered self-hosted n8n environments, overseeing end-to-end setup, scaling, security, and monitoring.",
+        "Conversational AI: Developed and deployed AI voice agents and custom assistants to orchestrate workflows and elevate customer support."
+      ]
+    },
+    {
+      title: "AI AUTOMATIONS & WORKFLOW SPECIALIST",
+      company: "NEXEL AUTOMATIONS",
+      location: "Remote",
+      period: "JAN 2026 - MAR 2026 (3 Months)",
+      description: [
+        "Engineered advanced prompts and developed custom AI chat and voice agents (including Retell AI) to automate customer interactions.",
+        "Built robust backend automations by integrating GoHighLevel workflows with custom Firebase functions.", 
+      ]
     }
   ];
 

@@ -26,7 +26,7 @@ const Hero = () => {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-in-delay-3">
             <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-200 flex items-center justify-center gap-2 hover:scale-105">
-              <a href= "https://drive.google.com/file/d/1v27q8nIiNDszm3StILmulfqDH_bVjpja/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2">
+              <a href= "https://drive.google.com/file/d/1tb7lmtRd3JDqq7r9oR3C06WBN0ywsLdy/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2">
                   <ExternalLink size={18} /> Download Resume </a>
             </button>
             <button 

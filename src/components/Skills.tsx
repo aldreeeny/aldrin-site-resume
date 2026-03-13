@@ -37,6 +37,7 @@ const Skills = () => {
     {
       title: "Project Management and Collaboration Tools",
       skills: [
+        { name: "Notion", level: 100 },
         { name: "Asana", level: 100 },
         { name: "Monday.com", level: 90 },
         { name: "ClickUp", level: 85 }
@@ -62,6 +63,7 @@ const Skills = () => {
         { name: "Claude", level: 90 },
         { name: "Grok", level: 80 },
         { name: "ElevenLabs", level: 95 },
+        { name: "Retell AI", level: 100 },
         { name: "Co Pilot", level: 100 },
       ]
     }
