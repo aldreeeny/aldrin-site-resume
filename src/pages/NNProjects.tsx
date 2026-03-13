@@ -3,115 +3,54 @@ import { ExternalLink, Github, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { getImageUrl } from '../utils/image-util.js';
 
-const ZapierProjects = () => {
+const NNProjects = () => {
   const projects = [
     {
-      title: "Google Form Booking Automation Workflow",
-      description: "Automatically processes Google Form booking requests and property updates, syncing data across platforms and notifying customers and teams.",
-      image: getImageUrl('Google Form Booking Automation Workflow.jpg'),
-      technologies: ["Zapier", "Google Forms", "Webhooks", "Google Calendar", "Google Sheets", "Gmail", "Google Chat"],
-      demoUrl: "https://drive.google.com/file/d/1crORAs4qqCSOvRCbzNvJyRxn9BXsnJXf/view?usp=sharing",
+      title: "AI Image-to-Video Automation via Telegram",
+      description: "An event-driven Telegram bot pipeline that transforms a single image and caption into short AI-generated videos. It enforces strict input validation, hosts assets via CDN, performs objective multimodal image analysis, and renders videos asynchronously with controlled synchronization. Final outputs are delivered in-chat and stored with durable public URLs, ensuring safety, accessibility, and reliable execution for creative AI media workflows.",
+      image: getImageUrl('AUT1.png'),
+      technologies: ["n8n", "Telegram", "OpenAI (GPT-4o)", "Imagekit", "Veo3", "Gemini"],
+      demoUrl: "https://drive.google.com/file/d/1_TU7lIvk5q-CUlB5ETXFiBG1pj49ZeyF/view?usp=sharing",
       featured: true
     },
     {
-      title: "Order Request Automation Workflow",
-      description: "Automates order and service requests by categorizing them and routing notifications to the right teams via Slack and Email.",
-      image: getImageUrl('Order Request Automation Workflow.png'),
-      technologies: ["Zapier",  "Webhooks", "Slack", "Gmail"],
-      demoUrl: "https://drive.google.com/file/d/1LFFJ8zwL__hZRNnnEaDSkoF__c3Vxvhz/view?usp=sharing",
+      title: "AI-Driven Viral VideoGeneration & Multi-Platform Publishing System",
+      description: "A fully automated, multi-stage pipeline that generates and publishes short-form social media videos without human intervention. Starting from a structured input form, it transforms topics into viral concepts, cinematic prompts, and rendered video assets through sequential AI reasoning. Videos are hosted on a CDN and distributed across platforms via APIs, enabling scalable, repeatable, and time-efficient content production for creators and marketing teams.",
+      image: getImageUrl('AUT2.png'),
+      technologies: ["n8n", "OpenAI (GPT-4.1)", "Imagekit", "Veo3", "Gemini", "Instagram (GraphAPI)", "YouTube API", "X (Twitter) API"],
+      demoUrl: "https://drive.google.com/file/d/1DsBKrWBHcg5ZFDMG4dAtrriC_iUp0mnu/view?usp=sharing",
       featured: true
     },
     {
-      title: "Payment Status Processing and Copper CRM Update",
-      description: "Automates payment event updates from Xero to Copper CRM, ensuring accurate payment tracking and timely client follow-ups.",
-      image: getImageUrl('Payment Status Processing and Copper CRM Update.jpg'),
-      technologies: ["Zapier", "Xero", "Copper CRM", "Webhooks"],
-      demoUrl: "https://drive.google.com/file/d/1pGp6KL996wpIuXLPCgaLQzTsAeHFD7jV/view?usp=sharing",
-      featured: true
-    }, 
-    {
-      title: "Kartra Opt-in Form → CRM, Tasking, and Contact Sync",
-      description: "Automatically syncs Kartra form submissions to spreadsheets, Xero, Google Contacts, and Asana for streamlined lead management and data consistency.",
-      image: getImageUrl('Kartra Opt-in Form CRM, Tasking, and Contact Sync.jpg'),
-      technologies: ["Zapier", "Kartra", "Google Sheets", "Xero", "Google Contacts", "Asana", "Copper CRM"],
-      demoUrl: "https://drive.google.com/file/d/1QG-N6up5XfN9yGm_KUxAGdUOFSGyFHhH/view?usp=sharing",
-      featured: true
-    }, 
-    {
-      title: "Gravity Forms Submission → CRM Updates, Task Creation, and Notifications",
-      description: "Instantly logs and syncs Gravity Forms submissions, assigns them to the right team members, and notifies the team.",
-      image: getImageUrl('Gravity Forms Submission CRM Updates, Task Creation, and Notifications.jpg'),
-      technologies: ["Zapier", "Gravity Forms", "Google Sheets", "Asana", "Keap"],
-      demoUrl: "https://drive.google.com/file/d/1EOYaZ-1UqjLyd4T294BJs1ctjGi-pn81/view?usp=sharing",
+      title: "Autonomous AI-Driven Outbound Voice Engagement & Callback Orchestration System",
+      description: "A distributed, event-driven automation that fully automates outbound lead outreach, qualification, scheduling, and callbacks using an AI-powered voice agent. Built on n8n and integrated with Google Sheets, Apps Script, ElevenLabs voice APIs, and external booking services, it runs primary and secondary workflows for calls and deferred callbacks. The AI agent conducts structured conversations, adapts to responses, verifies leads, books meetings, and logs outcomes in a centralized spreadsheet, eliminating manual dialing while ensuring reliability, traceability, and conversational nuance.",
+      image: getImageUrl('Aut 6.png'),
+      technologies: ["n8n", "OpenAI", "Javascript", "Google Sheets", "Elevenlabs", "Google Calendar", "HTML", "Slack", "Gmail API"],
+      demoUrl: "https://drive.google.com/file/d/13Wa_hdLIK2oM1a61Jo7R5fGTAeaGlO4E/view?usp=sharing",
       featured: true
     },
     {
-      title: "Dialpad Call State Change → Copper CRM Activity Logging",
-      description: "Automatically logs all employee calls in Copper CRM for accurate communication history and improved client tracking.",
-      image: getImageUrl('Dialpad Call State Change Copper CRM Activity Logging.jpg'),
-      technologies: ["Zapier", "Dialpad", "Copper"],
-      demoUrl: "https://drive.google.com/file/d/1HiyCSj_JQPnvwz8JV5le1R0xmF_aMuz-/view?usp=sharing",
+      title: "AI-Powered Single-PageSEO Audit Automation",
+      description: "A distributed, AI-assisted system that performs deterministic SEO audits of webpages by analyzing both technical structure and visible content in parallel. Using n8n orchestration, it dispatches data into separate pipelines for technical signals and semantic quality, then merges results into a standardized HTML report. Delivered automatically via email, the workflow provides precise, repeatable SEO intelligence while leaving implementation decisions to downstream teams.",
+      image: getImageUrl('AUT3.png'),
+      technologies: ["n8n", "OpenAI (GPT-4.1)", "SEO", "HTML", "Gmail API"],
+      demoUrl: "https://drive.google.com/file/d/1Yy72OmvnLdWtFPnL8mR6VioMSc5ZxhGG/view?usp=sharing",
       featured: true
     },
     {
-      title: "Asset Database Expiry Tracker Workflow",
-      description: "Tracks assets nearing expiry and notifies the right people via web app, spreadsheets, Slack, and email for visibility and accountability.",
-      image: getImageUrl('Asset Database Expiry Tracker Workflow.png'),
-      technologies: ["Zapier", "Webhooks", "Google Sheets", "Slack"],
-      demoUrl: "https://drive.google.com/file/d/1XPd1Tmhf3ot1vvC5P7mJvb5cQEABcDt1/view?usp=sharing",
+      title: "End-to-End AI-Orchestrated Social Media Publishing Pipeline",
+      description: "A fully orchestrated, AI-assisted pipeline that manages social media content creation, validation, asset generation, publishing, and reporting. Initiated via an n8n form, it uses specialized AI agents to craft platform-specific copy, enforces human approval through structured email review, generates visual assets with AI, and publishes to Instagram and X via APIs. Results are consolidated into an HTML report, ensuring governance, auditability, and scalable content workflows.",
+      image: getImageUrl('AUT4.png'),
+      technologies: ["n8n", "OpenAI", "Gmail API", "Imagekit", "Instagram (GraphAPI)", "X (Twitter) API", "DALLE-3"],
+      demoUrl: "https://drive.google.com/file/d/1njhnfoEIhMKVsGkk8hCwOwbxuctiTRnn/view?usp=sharing",
       featured: true
     },
     {
-      title: "Booking Form Notification Workflow",
-      description: "Automatically checks client license expiry on booking requests and notifies the team via Gmail with color-coded status (Red, Blue, Green).",
-      image: getImageUrl('Booking Form Notification Workflow.png'),
-      technologies: ["Zapier", "Webhooks", "Gmail"],
-      demoUrl: "https://drive.google.com/file/d/19JZn_Hw6c8NeRG2HuD-ef964uGVkwwjZ/view?usp=sharing",
-      featured: true
-    },
-
-    {
-      title: "Copper ↔ Xero Sync Automation Workflow",
-      description: "Syncs Copper CRM with Xero to automate invoicing, link projects, and set task reminders when new opportunities are created.",
-      image: getImageUrl('Copper Xero Sync Automation Workflow.jpg'),
-      technologies: ["Zapier", "Webhooks", "Copper", "Xero"],
-      demoUrl: "https://drive.google.com/file/d/11k4ia-Hv8bMU1N3U5GsoorRVWVQQ5qHS/view?usp=sharing",
-      featured: true
-    },
-
-    {
-      title: "Dialpad Copper Activity Sync V.2 Workflow",
-      description: "Automatically logs key Dialpad call activities into Copper CRM, syncing only relevant outcomes for clear client communication history.",
-      image: getImageUrl('DialpadCopper Activity Sync Workflow.jpg'),
-      technologies: ["Zapier", "Webhooks", "Dialpad", "Copper"],
-      demoUrl: "https://drive.google.com/file/d/15AYRqvpw9h2HIIjjWTGC9CK9G9Qw9CzX/view?usp=sharing",
-      featured: true
-    },
-
-    {
-      title: "Form Response Automation Workflow",
-      description: "Automatically logs new form responses and notifies stakeholders, streamlining both onboarding and offboarding processes.",
-      image: getImageUrl('Form Response Automation Workflow.png'),
-      technologies: ["Zapier", "Google Forms", "Webhooks"],
-      demoUrl: "https://drive.google.com/file/d/1WD37uMw_5hF_H7iTlncsdtGqfEE-CvVH/view?usp=sharing",
-      featured: true
-    },
-
-    {
-      title: "New Job Order Automation Workflow",
-      description: "Automates job order processing by validating site details and instantly notifying the right teams.",
-      image: getImageUrl('New Job Order Automation Workflow.jpg'),
-      technologies: ["Zapier",  "Webhooks", "Simpro", "WHS Monitor", "Google Chat"],
-      demoUrl: "https://drive.google.com/file/d/1RMe4mQcvKOBZA0P_pItZITW-8w5QYvhf/view?usp=sharing",
-      featured: true
-    },
-
-    {
-      title: "Vehicle Expiry Database Tracker Workflow",
-      description: "Monitors upcoming vehicle expiries, categorizes them, and notifies the right managers in real time.",
-      image: getImageUrl('ehicle Expiry Database Tracker Workflow.png'),
-      technologies: ["Zapier",  "Webhooks", "Slack"],
-      demoUrl: "https://drive.google.com/file/d/1z33tqEfmun43S61uXD4OJo1UWZnM8bjr/view?usp=sharing",
+      title: "Automated Trend-Driven Social Media Publishing System",
+      description: "A scheduled, event-driven automation that generates and distributes social media posts based on real-time Google Trends data. Using n8n orchestration, it integrates APIs for trend intelligence, language generation, and platform publishing, enforcing deterministic timing and rate-aware posting. The system eliminates manual research and posting, enabling scalable, consistent, and highly relevant social media operations for content and growth teams.",
+      image: getImageUrl('AUT5.png'),
+      technologies: ["n8n", "SerpAPI", "Javascript", "OpenAI (GPT-4.1)", "Facebook (GraphAPI)", "X (Twitter) API"],
+      demoUrl: "https://drive.google.com/file/d/13Wa_hdLIK2oM1a61Jo7R5fGTAeaGlO4E/view?usp=sharing",
       featured: true
     }
   ];
@@ -132,10 +71,10 @@ const ZapierProjects = () => {
             Back to Home
           </Link>
           <div className="text-center">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrVwOzVey6XcMevohRDman3xgDFw91v8qZfw&s" alt="Make.com Logo" className="mx-auto mb-4 w-24 h-24" />
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Zapier Projects</h1>
+            <img src="https://vectorseek.com/wp-content/uploads/2025/07/N8n-Ai-Logo-PNG-SVG-Vector.png" alt="n8n Logo" className="mx-auto mb-4 w-24 h-24" />
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">n8n Projects</h1>
             <p className="text-xl text-white max-w-3xl mx-auto">
-              A showcase of projects built using Zapier, demonstrating various integrations and workflows.
+              A showcase of projects built using n8n, highlighting how different apps and services can be integrated and automated with n8n’s powerful workflow tools.
             </p>
           </div>
         </div>
@@ -290,4 +229,4 @@ const ZapierProjects = () => {
   );
 };
 
-export default ZapierProjects;
+export default NNProjects;

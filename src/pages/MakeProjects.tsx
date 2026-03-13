@@ -60,7 +60,9 @@ const MakeProjects = () => {
       technologies: ["Make.com", "Copper", "Google Forms", "Google Drive"],
       demoUrl: "https://drive.google.com/file/d/1licv91hKDhv72Isho8hrOcFuIhwEOVpU/view?usp=sharing",
       featured: true
-    },
+    }
+
+
   ];
 
   const featuredProjects = projects.filter(project => project.featured);

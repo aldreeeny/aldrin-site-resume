@@ -17,8 +17,9 @@ const Skills = () => {
       skills: [
         { name: "Zapier", level: 95 },
         { name: "Make.com", level: 100 },
-        { name: "n8n", level: 80 },
-        { name: "REST APIs", level: 95 }
+        { name: "n8n", level: 95 },
+        { name: "REST APIs", level: 90 },
+        { name: "Webhooks", level: 100 }
       ]
     },
     {
@@ -53,6 +54,17 @@ const Skills = () => {
         { name: "Mailchimp", level: 90 },
       ]
     },
+    {
+      title: "AI Tools & Platforms",
+      skills: [
+        { name: "Open AI", level: 100 },
+        { name: "Gemini", level: 100},
+        { name: "Claude", level: 90 },
+        { name: "Grok", level: 80 },
+        { name: "ElevenLabs", level: 95 },
+        { name: "Co Pilot", level: 100 },
+      ]
+    }
   ];
 
   return (

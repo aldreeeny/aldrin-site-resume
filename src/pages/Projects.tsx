@@ -7,9 +7,17 @@ const Projects = () => {
     {
       title: "Appscript Projects",
       description: "A collection of automation projects built using Appscript, showcasing various integrations and workflows.",
-      image: "https://twenty-four.io/wp-content/uploads/2024/06/Google-Apps-Script-1.png",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxS-jyIr4suVkuMbv0oOQUMESzNsl99TdsNw&s",
       technologies: ["Appscript", "Automation", "Integrations", "Workflows", "APIs"],
       demoUrl: "/AppscriptProjects",
+      featured: true
+    },
+  {
+      title: "n8n Projects",
+      description: "A collection of automation projects built using n8n, showcasing various integrations and workflows.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX8A3w7fTcDPMHAN269z2fR5-KbrURS0QBA&s",
+      technologies: ["n8n", "Automation", "Integrations", "Workflows", "APIs"],
+      demoUrl: "/NNProjects",
       featured: true
     },
     {
@@ -28,6 +36,7 @@ const Projects = () => {
       demoUrl: "/ZapierProjects",
       featured: true
     }
+ 
 
   ];
 
