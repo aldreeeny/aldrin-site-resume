@@ -1,6 +1,6 @@
 import React from 'react';
 import { Lightbulb, LibraryBig, ListCollapse, ShieldHalf, Mails, Anchor } from 'lucide-react';
-import  profpic  from '../assets/IMG_1812.jpg';
+import profpic from '../assets/IMG_1812.jpg';
 
 const About = () => {
   const highlights = [
@@ -51,7 +51,7 @@ const About = () => {
                 <img src={profpic} alt="Logo" />
               </div>
             </div>
-            
+
             <div>
               <h3 className="text-2xl font-semibold text-gray-800 mb-6">
                 Passionate Workflow Specialist with 5+ Years Experience

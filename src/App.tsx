@@ -8,6 +8,7 @@ import MakeProjects from './pages/MakeProjects';
 import AppscriptProjects from './pages/AppscriptProjects';
 import ZapierProjects from './pages/ZapierProjects';
 import NNProjects from './pages/NNProjects';
+import WebDevProjects from './pages/WebDevProjects';
 import ScrollToTop from './components/ScrollToTop';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/NNProjects" element={<NNProjects />} />
           <Route path="/AppscriptProjects" element={<AppscriptProjects />} />
           <Route path="/ZapierProjects" element={<ZapierProjects />} />
+          <Route path="/WebDevProjects" element={<WebDevProjects />} />
         </Routes>
       </main>
       <Footer />

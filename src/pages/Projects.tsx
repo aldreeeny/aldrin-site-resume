@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -12,7 +12,7 @@ const Projects = () => {
       demoUrl: "/AppscriptProjects",
       featured: true
     },
-  {
+    {
       title: "n8n Projects",
       description: "A collection of automation projects built using n8n, showcasing various integrations and workflows.",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKX8A3w7fTcDPMHAN269z2fR5-KbrURS0QBA&s",
@@ -35,8 +35,15 @@ const Projects = () => {
       technologies: ["Zapier", "Automation", "Integrations", "Workflows", "APIs"],
       demoUrl: "/ZapierProjects",
       featured: true
+    },
+    {
+      title: "Web Development Projects",
+      description: "A collection of web development projects, showcasing responsive designs and high-performance applications.",
+      image: "https://miro.medium.com/v2/1*E_IBvzhZoO2w80Q78yvIrA.png",
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+      demoUrl: "/WebDevProjects",
+      featured: true
     }
- 
 
   ];
 
@@ -48,8 +55,8 @@ const Projects = () => {
       {/* Header */}
       <div className="bg-white shadow-sm" style={{ backgroundColor: '#172133' }}>
         <div className="container mx-auto px-6 py-8">
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors duration-200 mb-6"
           >
             <ArrowLeft size={20} className="mr-2" />
@@ -69,21 +76,21 @@ const Projects = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">Featured Projects</h2>
-            
+
             <div className="space-y-16">
               {featuredProjects.map((project, index) => (
                 <div key={index} className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                     <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
-                      <img 
-                        src={project.image} 
+                      <img
+                        src={project.image}
                         alt={project.title}
                         className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="absolute bottom-6 left-6 right-6 flex space-x-4">
-                          <Link 
-                            to={project.demoUrl} 
+                          <Link
+                            to={project.demoUrl}
                             className="bg-white text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors duration-200 flex items-center gap-2 flex-1 justify-center"
                           >
                             View All Projects
@@ -92,15 +99,15 @@ const Projects = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
                     <div className="bg-white p-8 rounded-2xl shadow-lg">
                       <h3 className="text-2xl font-bold text-gray-800 mb-4">{project.title}</h3>
                       <p className="text-gray-600 mb-6 leading-relaxed text-lg">{project.description}</p>
-                      
+
                       <div className="flex flex-wrap gap-3 mb-6">
                         {project.technologies.map((tech, idx) => (
-                          <span 
+                          <span
                             key={idx}
                             className="px-4 py-2 bg-blue-100 text-blue-700 text-sm rounded-full font-medium"
                           >
@@ -110,12 +117,12 @@ const Projects = () => {
                       </div>
 
                       <div className="flex space-x-4">
-                        <Link 
-                            to={project.demoUrl} 
-                            className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
-                          >
-                            View All Projects
-                          </Link>
+                        <Link
+                          to={project.demoUrl}
+                          className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200 flex items-center gap-2"
+                        >
+                          View All Projects
+                        </Link>
                       </div>
                     </div>
                   </div>
