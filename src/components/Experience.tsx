@@ -19,9 +19,9 @@ const Experience = () => {
       location: "Phase 2, Capricorn St, Dona Luisa, Davao City",
       period: "Sept 2019 - Jan 2020 (5 months)",
       description: [
-          "Brand-aligned graphic designs like social media content, website banners, marketing materials",
-          "Real Estate Photo Editing",
-          "Adobe Photoshop, Adobe lightroom"
+        "Brand-aligned graphic designs like social media content, website banners, marketing materials",
+        "Real Estate Photo Editing",
+        "Adobe Photoshop, Adobe lightroom"
       ]
     },
     {
@@ -30,10 +30,10 @@ const Experience = () => {
       location: "Remote",
       period: "Jan 2020 - Feb 2024 (4 years 2 months)",
       description: [
-          "Developed and implemented custom workflow automation scripts to streamline internal operations and improve productivity.",
-          "Maintained and updated website content, ensuring functionality, mobile responsiveness, and adherence to modern web standards.",
-          "Handled project-based client requests including building custom pages, forms, and integrated tools according to client specifications.",
-          "Conducted website performance reviews and optimized code for speed, SEO, and user experience."
+        "Developed and implemented custom workflow automation scripts to streamline internal operations and improve productivity.",
+        "Maintained and updated website content, ensuring functionality, mobile responsiveness, and adherence to modern web standards.",
+        "Handled project-based client requests including building custom pages, forms, and integrated tools according to client specifications.",
+        "Conducted website performance reviews and optimized code for speed, SEO, and user experience."
       ]
     },
     {
@@ -52,7 +52,7 @@ const Experience = () => {
       title: "AI AUTOMATIONS SPECIALIST",
       company: "Freelance Work",
       location: "Remote",
-      period: "SEPT 2024 - DEC 2025 (4 Months)",
+      period: "APRIL 2024 - DEC 2025 (8 Months)",
       description: [
         "End-to-End Automation: Designed, deployed, and maintained scalable workflow automations to eliminate manual tasks and optimize client operations.",
         "System Integration: Integrated CRMs (like GoHighLevel), ERPs, and databases via custom API connectors and scripts to resolve data bottlenecks.",
@@ -68,7 +68,7 @@ const Experience = () => {
       period: "JAN 2026 - MAR 2026 (3 Months)",
       description: [
         "Engineered advanced prompts and developed custom AI chat and voice agents (including Retell AI) to automate customer interactions.",
-        "Built robust backend automations by integrating GoHighLevel workflows with custom Firebase functions.", 
+        "Built robust backend automations by integrating GoHighLevel workflows with custom Firebase functions.",
       ]
     }
   ];
@@ -101,7 +101,7 @@ const Experience = () => {
                     </div>
                   </div>
                 </div>
-                
+
                 <ul className="space-y-2">
                   {exp.description.map((item, idx) => (
                     <li key={idx} className="text-gray-600 flex items-start">
