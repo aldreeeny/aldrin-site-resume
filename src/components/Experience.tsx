@@ -52,7 +52,7 @@ const Experience = () => {
       title: "AI AUTOMATIONS SPECIALIST",
       company: "Freelance Work",
       location: "Remote",
-      period: "April 2024 - Dec 2025 (8 Months)",
+      period: "April 2025 - Dec 2025 (8 Months)",
       description: [
         "End-to-End Automation: Designed, deployed, and maintained scalable workflow automations to eliminate manual tasks and optimize client operations.",
         "System Integration: Integrated CRMs (like GoHighLevel), ERPs, and databases via custom API connectors and scripts to resolve data bottlenecks.",
