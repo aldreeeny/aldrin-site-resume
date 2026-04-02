@@ -52,7 +52,7 @@ const Experience = () => {
       title: "AI AUTOMATIONS SPECIALIST",
       company: "Freelance Work",
       location: "Remote",
-      period: "APRIL 2024 - DEC 2025 (8 Months)",
+      period: "April 2024 - Dec 2025 (8 Months)",
       description: [
         "End-to-End Automation: Designed, deployed, and maintained scalable workflow automations to eliminate manual tasks and optimize client operations.",
         "System Integration: Integrated CRMs (like GoHighLevel), ERPs, and databases via custom API connectors and scripts to resolve data bottlenecks.",
@@ -65,7 +65,7 @@ const Experience = () => {
       title: "AI AUTOMATIONS & WORKFLOW SPECIALIST",
       company: "NEXEL AUTOMATIONS",
       location: "Remote",
-      period: "JAN 2026 - MAR 2026 (3 Months)",
+      period: "Jan 2026 - Mar 2026 (3 Months)",
       description: [
         "Engineered advanced prompts and developed custom AI chat and voice agents (including Retell AI) to automate customer interactions.",
         "Built robust backend automations by integrating GoHighLevel workflows with custom Firebase functions.",
